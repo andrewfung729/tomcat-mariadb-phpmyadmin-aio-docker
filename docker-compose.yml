@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  mariadb:
+    container_name: dev_mariadb
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: exampledb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    restart: always
+    networks:
+      - mariadb_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: dev_pma
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - mariadb
+    restart: always
+    networks:
+      - mariadb_network
+
+  tomcat:
+    container_name: dev_tomcat
+    image: tomcat:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target:/usr/local/tomcat/webapps
+    restart: always
+    networks:
+      - mariadb_network
+
+volumes:
+  mariadb_data:
+
+networks:
+  mariadb_network:
+    driver: bridge
