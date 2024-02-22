@@ -18,6 +18,14 @@ utilization. By employing this template, you acknowledge and accept that I, as t
 liability for any potential errors, data loss, or damages that may occur as a result of using this guide. Your decision
 to use this template is at your own risk, and it is recommended to proceed with caution and due diligence.
 
+### References
+
+- https://hub.docker.com/r/bitnami/mariadb
+- https://hub.docker.com/r/bitnami/phpmyadmin
+- https://docs.docker.com
+- https://github.com/twtrubiks/docker-tutorial
+- https://electrify.tw/archives/395/homebrew-for-mac/
+
 ## Prerequisites
 
 ### Windows Users
@@ -102,7 +110,7 @@ A known charset issue with the latest official phpMyAdmin image can lead to conn
 displaying: `mysqli_real_connect(): (HY000/1130): Host 'X.X.X.X' is not allowed to connect to this MariaDB server`. To
 mitigate this, configure the MariaDB server to use `utf8mb4` charset by adding the necessary configurations.
 
-#### Ref:
+#### References
 
 1. https://github.com/php/php-src/issues/13452
 2. https://gist.github.com/w0rldart/aa472db45c3817d937a1870a32f77820
