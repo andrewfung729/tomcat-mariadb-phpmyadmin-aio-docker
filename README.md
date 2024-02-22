@@ -62,9 +62,11 @@ guaranteed.
    ```bash
    docker compose up
    ```
-3. Access the Tomcat server at [http://localhost:8080](http://localhost:8080).
-4. Access phpMyAdmin at [http://localhost:8081](http://localhost:8081).
-5. Connect to the MariaDB server at `localhost:13306`.
+3. FYI, the default username is `root` and the password is empty for the MariaDB server. You also need to create the
+   database by yourself.
+4. Access the Tomcat server at [http://localhost:8080](http://localhost:8080).
+5. Access phpMyAdmin at [http://localhost:8081](http://localhost:8081).
+6. Connect to the MariaDB server at `localhost:13306`.
 
 ## Additional Resources for SEHS4701(23/24) Classmates
 
