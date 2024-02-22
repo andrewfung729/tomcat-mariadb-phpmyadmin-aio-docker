@@ -4,6 +4,8 @@ This Docker Compose template includes MariaDB, phpMyAdmin, and Tomcat, specifica
 classmates to facilitate their J2EE learning. It serves as an exemplary framework for anyone looking to utilize
 MySQL/MariaDB and phpMyAdmin in a convenient manner.
 
+用Mac的同學有福了，唔使再痛苦咁搞Tomcat、MariaDB、MySQL Workbench、OpenJDK。用Docker啦，即開即用！
+
 ## Disclaimer
 
 This project consolidates different Docker images and Docker Compose configurations strictly for educational and
@@ -69,8 +71,6 @@ guaranteed.
 6. Connect to the MariaDB server at `localhost:13306`.
 
 ## Additional Resources for SEHS4701(23/24) Classmates
-
-用Mac的同學有福了
 
 This section is dedicated to classmates enrolled in the SEHS4701(23/24) course. The recommendations provided here
 reflect my personal preferences. Please feel free to explore and utilize whatever tools and methods best suit your
