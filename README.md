@@ -4,7 +4,8 @@ This Docker Compose template includes MariaDB, phpMyAdmin, and Tomcat, specifica
 classmates to facilitate their J2EE learning. It serves as an exemplary framework for anyone looking to utilize
 MySQL/MariaDB and phpMyAdmin in a convenient manner.
 
-用Mac的同學有福了，唔使再痛苦咁搞Tomcat、MariaDB、MySQL Workbench、OpenJDK。用Docker啦，即開即用！
+用Docker的同學有福了，唔使再痛苦咁搞Tomcat、MariaDB、MySQL Workbench。用Docker啦，即開即用！
+用Mac的同學有福了，唔使再痛苦咁裝嘢！用Homebrew啦，輕鬆安裝IDE、OpenJDK！
 
 ## Disclaimer
 
