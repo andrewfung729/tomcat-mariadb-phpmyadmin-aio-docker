@@ -29,6 +29,13 @@ MySQL/MariaDB and phpMyAdmin in a convenient manner.
    ports in compose file yourself.
 7. You need to create the database by yourself.
 
+### Configuration Ref
+
+- https://hub.docker.com/r/bitnami/mariadb
+- https://hub.docker.com/r/bitnami/phpmyadmin
+- https://hub.docker.com/_/tomcat
+- https://github.com/bitnami/containers
+
 ## Known Issues and Workarounds
 
 ### Compatibility with Apple Silicon
