@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mariadb:
     container_name: aio_mariadb
-    image: bitnami/mariadb:11.2.3-debian-12-r4
+    image: bitnami/mariadb:11.2.3
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
@@ -15,7 +15,7 @@ services:
       - aio_network
 
   phpmyadmin:
-    image: bitnami/phpmyadmin:5.2.1-debian-12-r20
+    image: bitnami/phpmyadmin:5.2.1
     container_name: aio_pma
     ports:
       - "8081:8080"
@@ -27,7 +27,7 @@ services:
 
   tomcat:
     container_name: aio_tomcat
-    image: tomcat:latest
+    image: tomcat:10.1.19
     ports:
       - "8080:8080"
     volumes:

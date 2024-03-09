@@ -8,7 +8,7 @@ MySQL/MariaDB and phpMyAdmin in a convenient manner.
 
 | Component  | Version | Image Source |
 |------------|---------|--------------|
-| Tomcat     | latest  | official     |
+| Tomcat     | 10.1.19 | official     |
 | MariaDB    | 11.2.3  | bitnami      |
 | phpMyAdmin | 5.2.1   | bitnami      |
 
