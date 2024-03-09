@@ -24,7 +24,7 @@ MySQL/MariaDB and phpMyAdmin in a convenient manner.
    ```
 3. Access the Tomcat server at [http://localhost:8080](http://localhost:8080).
 4. Access phpMyAdmin at [http://localhost:8081](http://localhost:8081).
-5. Connect to the MariaDB server at `localhost:13306`.
+5. Connect to the MariaDB server at `localhost:3306`.
 6. FYI, the default username is `root` and the password is empty for the MariaDB server. You can edit the login info and
    ports in compose file yourself.
 7. You need to create the database by yourself.
