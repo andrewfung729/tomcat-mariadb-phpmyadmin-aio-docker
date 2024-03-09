@@ -9,10 +9,10 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - mariadb_data:/bitnami/maria
+      - mariadb_data:/bitnami/mariadb
     restart: always
     networks:
-      - mariadb_network
+      - aio_network
 
   phpmyadmin:
     image: bitnami/phpmyadmin:5.2.1-debian-12-r20
@@ -23,7 +23,7 @@ services:
       - mariadb
     restart: always
     networks:
-      - mariadb_network
+      - aio_network
 
   tomcat:
     container_name: aio_tomcat
@@ -34,12 +34,12 @@ services:
       - ./target:/usr/local/tomcat/webapps
     restart: always
     networks:
-      - mariadb_network
+      - aio_network
 
 volumes:
   mariadb_data:
     driver: local
 
 networks:
-  mariadb_network:
+  aio_network:
     driver: bridge
